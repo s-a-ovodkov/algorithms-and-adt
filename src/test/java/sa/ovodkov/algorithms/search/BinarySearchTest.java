@@ -1,4 +1,4 @@
-package sa.ovodkov.learn.algorithms.search.binary;
+package sa.ovodkov.algorithms.search;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -55,7 +55,7 @@ class BinarySearchTest {
   }
 
   @Test
-  @DisplayName("Список состоит из одного элемента")
+  @DisplayName("Пустой список")
   void search6() {
     List<Integer> emptyList = new ArrayList<>();
     int targetValue = 99;
