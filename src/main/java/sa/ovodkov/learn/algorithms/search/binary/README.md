@@ -19,4 +19,4 @@
 6. Иначе элемент в позиции *mid* больше искомого элемента, и *right* = *mid* - 1
 7. Вернуться к шагу 2
 
-![Пример](images/binary_search.png)
+![Пример](https://github.com/Gravonere/learn-algorithms/tree/main/images/binary_search.png)
