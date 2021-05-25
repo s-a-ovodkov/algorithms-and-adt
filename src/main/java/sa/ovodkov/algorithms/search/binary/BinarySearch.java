@@ -1,4 +1,4 @@
-package sa.ovodkov.algorithms.search;
+package sa.ovodkov.algorithms.search.binary;
 
 import org.jetbrains.annotations.NotNull;
 
