@@ -11,6 +11,8 @@ import java.util.List;
  */
 public class BinarySearch {
 
+  private BinarySearch() { }
+
   /**
    * Поиск индекса первого вхождения указанного элемента в массив
    *
