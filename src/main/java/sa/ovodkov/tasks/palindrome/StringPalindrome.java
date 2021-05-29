@@ -39,4 +39,22 @@ public class StringPalindrome {
     }
     return false;
   }
+
+  /**
+   * Определение является переданная строка палиндромом (используя императивынй метод)
+   * Этот метод проходится только по половине слова, что потенциально оптимальнее предыдущего
+   * метода.
+   *
+   * @param str строка, которую необходимо проверить является ли она палиндромом
+   * @return true - если переданная строка палиндром, иначе false
+   */
+  public static boolean isPalindromeOptimal(String str) {
+    if (str.isEmpty() || str.length() == 1) return true;
+    int end = str.length() - 1;
+    int middle = str.length() / 2;
+    for (int i = 0; i <= middle; i++) {
+      if (str.charAt(i) != str.charAt(end - i)) return false;
+    }
+    return true;
+  }
 }

@@ -41,4 +41,18 @@ class StringPalindromeTest {
 
     assertEquals(expectedResult, actualResult);
   }
+
+  @ParameterizedTest
+  @CsvSource({
+          "motor, false",
+          "rotor, true",
+          "racecar, true",
+          "foobar, false",
+          "roor, true"
+  })
+  void isPalindromeOptimal(String str, boolean expectedResult) {
+    boolean actualResult = StringPalindrome.isPalindromeOptimal(str);
+
+    assertEquals(expectedResult, actualResult);
+  }
 }
